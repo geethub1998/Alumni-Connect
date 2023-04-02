@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        width: 100%;
+        margin:10px;
+        padding: 0px;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 65%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    .footer{
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+    .input-wrapper {
+        display:inline-block;
+        position: relative;
+        margin-top: 10px;
+    height: 33px;
+    margin-left: 10px;
+    border-radius: 5px;
+  
+    }
+    .input-wrapper:after {
+        font-family: 'FontAwesome';
+        content: '\f2bd';
+        position: absolute;
+        right: 6px;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+        font-size: 1.5em;
+         margin-top: -5px;
+
+    }
+    .jobcard{
+   
+    color:black;
+    padding: 10px;
+    margin-left: 10px;
+    height: 25%;
+    width: 61.5%;
+    background-color: #f1f1f1;
+  margin-top:10px;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-2 sidenav" style="padding:10px;margin:10px">
+      <h4>John's Blog</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Home</a></li>
+        <li><a href="#section2">Friends</a></li>
+        <li><a href="#section3">Family</a></li>
+        <li><a href="#section3">Photos</a></li>
+      </ul><br>
+      
+    </div>
+
+    <div class="col-sm-6 input-group" style="width:64%;margin-top:10px;float:left" >
+        <input type="text" class="form-control" placeholder="Search Blog.." >
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"style="margin-bottom: 12px; height: 34px;">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+       </div>
+
+     <div class="col-sm-1 input-group">
+        <div class="input-wrapper form-control" style="border-radius:4px; width:168%";>
+            
+        </div>
+    
+      </div>
+<br>
+<br>
+
+     <div class="col-sm-2 sidenav" style="padding:10px;height:50.7%"> 
+<div class="col-sm-6 input-group" style="margin-top:10px;float:left;width: 98%;" >
+            <input type="text" class="form-control" placeholder="Filter" style="text-align: right; border-radius: 4px; height:80%" >
+</div>
+    </div>
+    <div class="col-sm-6 sidenav" style="padding:10px;margin-left:10px;height:25%;width: 61.5%;">
+        <div style="margin-top:10px;float:left;width: 100%;" >
+                   <h3>Job Card</h3>
+               
+                   <i class="fa fa-user-circle" aria-hidden="true" style="  font-size: 2.5em; margin-top: 10px;"></i>
+               
+                  <div style="margin-top:-47px">
+                    <input type="text" class="form-control" placeholder="Name" style="text-align: right; border-radius: 4px; height:80%;width:30%;display: flex; margin-top: -32px; margin-left: 45px;" >
+                    <input type="text" class="form-control" placeholder="Company" style="text-align: right; border-radius: 4px; height:80%;width:30%;display: flex; margin-top: 1px; margin-left: 45px;" >
+                  </div> 
+                  
+
+                </div>   
+             </div>
+           <br>
+          <div class="jobcard">
+                <h3>JobCard</h3>
+            </div>
+            <!-- <div style="margin-top:34px">  
+              <input type="text" class="form-control" placeholder="Job Type"  >
+    <input type="text" class="form-control" placeholder="Post Date" >
+    <input type="text" class="form-control" placeholder="Last Date" >
+    <input type="text" class="form-control" placeholder="Work Form Home"  >
+    <input type="text" class="form-control" placeholder="On-site" >
+    <input type="text" class="form-control" placeholder="Salary">
+    
+    </div> -->
+  </div>
+  <div class="footer">
+    <p>Footer Text</p>
+  </div>
+ 
+         </div>
+        
+      
+</body>
+</html>
